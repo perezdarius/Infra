@@ -1,0 +1,55 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1792201691079,
+      "tag": "0000_migration",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1792204286821,
+      "tag": "0001_phase2_staff_admin_infra",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1792204369666,
+      "tag": "0002_lov_database_migration",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1792212073824,
+      "tag": "0003_add_report_barangay",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1792239922802,
+      "tag": "0004_public_report_list_view",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1792248967985,
+      "tag": "0005_add_contact_phone_and_public_photos",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1792280286212,
+      "tag": "0006_require_resolution_reply_and_proof",
+      "breakpoints": true
+    }
+  ]
+}

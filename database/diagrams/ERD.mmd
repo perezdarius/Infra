@@ -1,0 +1,121 @@
+erDiagram
+    AUTH_USERS {
+        uuid id PK
+    }
+    AUDIT_LOG {
+        uuid id PK
+        uuid actor_id
+        text action
+        text entity
+        uuid entity_id
+        text detail
+        timestamp_with_time_zone created_at
+    }
+    INFRASTRUCTURE_ITEMS {
+        uuid id PK
+        text name
+        report_category category
+        text location
+        text description
+        uuid created_by
+        timestamp_with_time_zone created_at
+        timestamp_with_time_zone updated_at
+    }
+    MAINTENANCE_RECORDS {
+        uuid id PK
+        uuid infrastructure_id FK
+        uuid report_id FK
+        text office
+        text work_description
+        maintenance_status status
+        date scheduled_date
+        date completed_date
+        numeric_12_2_ cost
+        uuid created_by
+        timestamp_with_time_zone created_at
+        timestamp_with_time_zone updated_at
+    }
+    PROFILES {
+        uuid id PK
+        text full_name
+        text phone
+        text barangay
+        timestamp_with_time_zone created_at
+        timestamp_with_time_zone updated_at
+    }
+    REPORT_ATTACHMENTS {
+        uuid id PK
+        uuid report_id FK
+        uuid uploaded_by
+        text storage_path
+        text file_name
+        text mime_type
+        integer size_bytes
+        timestamp_with_time_zone created_at
+    }
+    REPORT_INTERNAL_NOTES {
+        uuid id PK
+        uuid report_id FK
+        uuid author_id
+        text note
+        timestamp_with_time_zone created_at
+    }
+    REPORT_RESOLUTIONS {
+        uuid id PK
+        uuid report_id FK
+        text reply
+        jsonb photos
+        uuid uploaded_by
+        timestamp_with_time_zone created_at
+    }
+    REPORT_STATUS_HISTORY {
+        uuid id PK
+        uuid report_id FK
+        report_status from_status
+        report_status to_status
+        text note
+        uuid changed_by
+        timestamp_with_time_zone created_at
+    }
+    REPORTS {
+        uuid id PK
+        text reference_no
+        uuid reporter_id
+        report_category category
+        report_severity severity
+        text title
+        text description
+        text address
+        text landmark
+        double_precision latitude
+        double_precision longitude
+        report_status status
+        timestamp_with_time_zone created_at
+        timestamp_with_time_zone updated_at
+        report_priority priority
+        text assigned_office
+        uuid assigned_to
+        uuid duplicate_of FK
+        text duplicate_reason
+        timestamp_with_time_zone archived_at
+        uuid archived_by
+        text archive_reason
+        text barangay
+        text contact_phone
+        uuid resolution_id FK
+    }
+    USER_ROLES {
+        uuid id PK
+        uuid user_id FK
+        app_role role
+    }
+    INFRASTRUCTURE_ITEMS |o--o{ MAINTENANCE_RECORDS : "infrastructure_id"
+    REPORTS |o--o{ MAINTENANCE_RECORDS : "report_id"
+    AUTH_USERS ||--o| PROFILES : "id"
+    REPORTS ||--o{ REPORT_ATTACHMENTS : "report_id"
+    REPORTS ||--o{ REPORT_INTERNAL_NOTES : "report_id"
+    REPORTS ||--o{ REPORT_RESOLUTIONS : "report_id"
+    REPORTS ||--o{ REPORT_STATUS_HISTORY : "report_id"
+    REPORTS |o--o{ REPORTS : "duplicate_of"
+    REPORT_RESOLUTIONS |o--o{ REPORTS : "resolution_id"
+    AUTH_USERS ||--o{ USER_ROLES : "user_id"

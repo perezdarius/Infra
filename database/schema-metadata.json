@@ -1,0 +1,2482 @@
+{
+  "columns": [
+    {
+      "column_default": "gen_random_uuid()",
+      "column_name": "id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "ordinal_position": 1,
+      "table_name": "audit_log",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "actor_id",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "ordinal_position": 2,
+      "table_name": "audit_log",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "action",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "ordinal_position": 3,
+      "table_name": "audit_log",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "entity",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "ordinal_position": 4,
+      "table_name": "audit_log",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "entity_id",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "ordinal_position": 5,
+      "table_name": "audit_log",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "detail",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "ordinal_position": 6,
+      "table_name": "audit_log",
+      "udt_name": "text"
+    },
+    {
+      "column_default": "now()",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "ordinal_position": 7,
+      "table_name": "audit_log",
+      "udt_name": "timestamptz"
+    },
+    {
+      "column_default": "gen_random_uuid()",
+      "column_name": "id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "ordinal_position": 1,
+      "table_name": "infrastructure_items",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "name",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "ordinal_position": 2,
+      "table_name": "infrastructure_items",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "category",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "ordinal_position": 3,
+      "table_name": "infrastructure_items",
+      "udt_name": "report_category"
+    },
+    {
+      "column_default": null,
+      "column_name": "location",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "ordinal_position": 4,
+      "table_name": "infrastructure_items",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "description",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "ordinal_position": 5,
+      "table_name": "infrastructure_items",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "created_by",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "ordinal_position": 6,
+      "table_name": "infrastructure_items",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": "now()",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "ordinal_position": 7,
+      "table_name": "infrastructure_items",
+      "udt_name": "timestamptz"
+    },
+    {
+      "column_default": "now()",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "ordinal_position": 8,
+      "table_name": "infrastructure_items",
+      "udt_name": "timestamptz"
+    },
+    {
+      "column_default": "gen_random_uuid()",
+      "column_name": "id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "ordinal_position": 1,
+      "table_name": "maintenance_records",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "infrastructure_id",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "ordinal_position": 2,
+      "table_name": "maintenance_records",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "report_id",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "ordinal_position": 3,
+      "table_name": "maintenance_records",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "office",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "ordinal_position": 4,
+      "table_name": "maintenance_records",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "work_description",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "ordinal_position": 5,
+      "table_name": "maintenance_records",
+      "udt_name": "text"
+    },
+    {
+      "column_default": "'planned'::maintenance_status",
+      "column_name": "status",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "ordinal_position": 6,
+      "table_name": "maintenance_records",
+      "udt_name": "maintenance_status"
+    },
+    {
+      "column_default": null,
+      "column_name": "scheduled_date",
+      "data_type": "date",
+      "is_nullable": "YES",
+      "ordinal_position": 7,
+      "table_name": "maintenance_records",
+      "udt_name": "date"
+    },
+    {
+      "column_default": null,
+      "column_name": "completed_date",
+      "data_type": "date",
+      "is_nullable": "YES",
+      "ordinal_position": 8,
+      "table_name": "maintenance_records",
+      "udt_name": "date"
+    },
+    {
+      "column_default": null,
+      "column_name": "cost",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "ordinal_position": 9,
+      "table_name": "maintenance_records",
+      "udt_name": "numeric"
+    },
+    {
+      "column_default": null,
+      "column_name": "created_by",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "ordinal_position": 10,
+      "table_name": "maintenance_records",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": "now()",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "ordinal_position": 11,
+      "table_name": "maintenance_records",
+      "udt_name": "timestamptz"
+    },
+    {
+      "column_default": "now()",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "ordinal_position": 12,
+      "table_name": "maintenance_records",
+      "udt_name": "timestamptz"
+    },
+    {
+      "column_default": null,
+      "column_name": "id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "ordinal_position": 1,
+      "table_name": "profiles",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": "''::text",
+      "column_name": "full_name",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "ordinal_position": 2,
+      "table_name": "profiles",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "phone",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "ordinal_position": 3,
+      "table_name": "profiles",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "barangay",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "ordinal_position": 4,
+      "table_name": "profiles",
+      "udt_name": "text"
+    },
+    {
+      "column_default": "now()",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "ordinal_position": 5,
+      "table_name": "profiles",
+      "udt_name": "timestamptz"
+    },
+    {
+      "column_default": "now()",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "ordinal_position": 6,
+      "table_name": "profiles",
+      "udt_name": "timestamptz"
+    },
+    {
+      "column_default": null,
+      "column_name": "id",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "ordinal_position": 1,
+      "table_name": "public_report_list",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "reference_no",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "ordinal_position": 2,
+      "table_name": "public_report_list",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "category",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "YES",
+      "ordinal_position": 3,
+      "table_name": "public_report_list",
+      "udt_name": "report_category"
+    },
+    {
+      "column_default": null,
+      "column_name": "severity",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "YES",
+      "ordinal_position": 4,
+      "table_name": "public_report_list",
+      "udt_name": "report_severity"
+    },
+    {
+      "column_default": null,
+      "column_name": "status",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "YES",
+      "ordinal_position": 5,
+      "table_name": "public_report_list",
+      "udt_name": "report_status"
+    },
+    {
+      "column_default": null,
+      "column_name": "title",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "ordinal_position": 6,
+      "table_name": "public_report_list",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "description",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "ordinal_position": 7,
+      "table_name": "public_report_list",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "barangay",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "ordinal_position": 8,
+      "table_name": "public_report_list",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "ordinal_position": 9,
+      "table_name": "public_report_list",
+      "udt_name": "timestamptz"
+    },
+    {
+      "column_default": null,
+      "column_name": "id",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "ordinal_position": 1,
+      "table_name": "public_report_resolutions",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "report_id",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "ordinal_position": 2,
+      "table_name": "public_report_resolutions",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "reply",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "ordinal_position": 3,
+      "table_name": "public_report_resolutions",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "photos",
+      "data_type": "jsonb",
+      "is_nullable": "YES",
+      "ordinal_position": 4,
+      "table_name": "public_report_resolutions",
+      "udt_name": "jsonb"
+    },
+    {
+      "column_default": null,
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "ordinal_position": 5,
+      "table_name": "public_report_resolutions",
+      "udt_name": "timestamptz"
+    },
+    {
+      "column_default": null,
+      "column_name": "id",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "ordinal_position": 1,
+      "table_name": "public_report_stats",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "category",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "YES",
+      "ordinal_position": 2,
+      "table_name": "public_report_stats",
+      "udt_name": "report_category"
+    },
+    {
+      "column_default": null,
+      "column_name": "severity",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "YES",
+      "ordinal_position": 3,
+      "table_name": "public_report_stats",
+      "udt_name": "report_severity"
+    },
+    {
+      "column_default": null,
+      "column_name": "status",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "YES",
+      "ordinal_position": 4,
+      "table_name": "public_report_stats",
+      "udt_name": "report_status"
+    },
+    {
+      "column_default": null,
+      "column_name": "priority",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "YES",
+      "ordinal_position": 5,
+      "table_name": "public_report_stats",
+      "udt_name": "report_priority"
+    },
+    {
+      "column_default": null,
+      "column_name": "month",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "ordinal_position": 6,
+      "table_name": "public_report_stats",
+      "udt_name": "timestamptz"
+    },
+    {
+      "column_default": null,
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "ordinal_position": 7,
+      "table_name": "public_report_stats",
+      "udt_name": "timestamptz"
+    },
+    {
+      "column_default": "gen_random_uuid()",
+      "column_name": "id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "ordinal_position": 1,
+      "table_name": "report_attachments",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "report_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "ordinal_position": 2,
+      "table_name": "report_attachments",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "uploaded_by",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "ordinal_position": 3,
+      "table_name": "report_attachments",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "storage_path",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "ordinal_position": 4,
+      "table_name": "report_attachments",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "file_name",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "ordinal_position": 5,
+      "table_name": "report_attachments",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "mime_type",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "ordinal_position": 6,
+      "table_name": "report_attachments",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "size_bytes",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "ordinal_position": 7,
+      "table_name": "report_attachments",
+      "udt_name": "int4"
+    },
+    {
+      "column_default": "now()",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "ordinal_position": 8,
+      "table_name": "report_attachments",
+      "udt_name": "timestamptz"
+    },
+    {
+      "column_default": "gen_random_uuid()",
+      "column_name": "id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "ordinal_position": 1,
+      "table_name": "report_internal_notes",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "report_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "ordinal_position": 2,
+      "table_name": "report_internal_notes",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "author_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "ordinal_position": 3,
+      "table_name": "report_internal_notes",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "note",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "ordinal_position": 4,
+      "table_name": "report_internal_notes",
+      "udt_name": "text"
+    },
+    {
+      "column_default": "now()",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "ordinal_position": 5,
+      "table_name": "report_internal_notes",
+      "udt_name": "timestamptz"
+    },
+    {
+      "column_default": "gen_random_uuid()",
+      "column_name": "id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "ordinal_position": 1,
+      "table_name": "report_resolutions",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "report_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "ordinal_position": 2,
+      "table_name": "report_resolutions",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "reply",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "ordinal_position": 3,
+      "table_name": "report_resolutions",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "photos",
+      "data_type": "jsonb",
+      "is_nullable": "NO",
+      "ordinal_position": 4,
+      "table_name": "report_resolutions",
+      "udt_name": "jsonb"
+    },
+    {
+      "column_default": null,
+      "column_name": "uploaded_by",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "ordinal_position": 5,
+      "table_name": "report_resolutions",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": "now()",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "ordinal_position": 6,
+      "table_name": "report_resolutions",
+      "udt_name": "timestamptz"
+    },
+    {
+      "column_default": "gen_random_uuid()",
+      "column_name": "id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "ordinal_position": 1,
+      "table_name": "report_status_history",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "report_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "ordinal_position": 2,
+      "table_name": "report_status_history",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "from_status",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "YES",
+      "ordinal_position": 3,
+      "table_name": "report_status_history",
+      "udt_name": "report_status"
+    },
+    {
+      "column_default": null,
+      "column_name": "to_status",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "ordinal_position": 4,
+      "table_name": "report_status_history",
+      "udt_name": "report_status"
+    },
+    {
+      "column_default": null,
+      "column_name": "note",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "ordinal_position": 5,
+      "table_name": "report_status_history",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "changed_by",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "ordinal_position": 6,
+      "table_name": "report_status_history",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": "now()",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "ordinal_position": 7,
+      "table_name": "report_status_history",
+      "udt_name": "timestamptz"
+    },
+    {
+      "column_default": "gen_random_uuid()",
+      "column_name": "id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "ordinal_position": 1,
+      "table_name": "reports",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": "((('IC-'::text || to_char(now(), 'YYYY'::text)) || '-'::text) || lpad((nextval('report_ref_seq'::regclass))::text, 5, '0'::text))",
+      "column_name": "reference_no",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "ordinal_position": 2,
+      "table_name": "reports",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "reporter_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "ordinal_position": 3,
+      "table_name": "reports",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "category",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "ordinal_position": 4,
+      "table_name": "reports",
+      "udt_name": "report_category"
+    },
+    {
+      "column_default": null,
+      "column_name": "severity",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "ordinal_position": 5,
+      "table_name": "reports",
+      "udt_name": "report_severity"
+    },
+    {
+      "column_default": null,
+      "column_name": "title",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "ordinal_position": 6,
+      "table_name": "reports",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "description",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "ordinal_position": 7,
+      "table_name": "reports",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "address",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "ordinal_position": 8,
+      "table_name": "reports",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "landmark",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "ordinal_position": 9,
+      "table_name": "reports",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "latitude",
+      "data_type": "double precision",
+      "is_nullable": "YES",
+      "ordinal_position": 10,
+      "table_name": "reports",
+      "udt_name": "float8"
+    },
+    {
+      "column_default": null,
+      "column_name": "longitude",
+      "data_type": "double precision",
+      "is_nullable": "YES",
+      "ordinal_position": 11,
+      "table_name": "reports",
+      "udt_name": "float8"
+    },
+    {
+      "column_default": "'submitted'::report_status",
+      "column_name": "status",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "ordinal_position": 12,
+      "table_name": "reports",
+      "udt_name": "report_status"
+    },
+    {
+      "column_default": "now()",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "ordinal_position": 13,
+      "table_name": "reports",
+      "udt_name": "timestamptz"
+    },
+    {
+      "column_default": "now()",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "ordinal_position": 14,
+      "table_name": "reports",
+      "udt_name": "timestamptz"
+    },
+    {
+      "column_default": "'normal'::report_priority",
+      "column_name": "priority",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "ordinal_position": 15,
+      "table_name": "reports",
+      "udt_name": "report_priority"
+    },
+    {
+      "column_default": null,
+      "column_name": "assigned_office",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "ordinal_position": 16,
+      "table_name": "reports",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "assigned_to",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "ordinal_position": 17,
+      "table_name": "reports",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "duplicate_of",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "ordinal_position": 18,
+      "table_name": "reports",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "duplicate_reason",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "ordinal_position": 19,
+      "table_name": "reports",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "archived_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "ordinal_position": 20,
+      "table_name": "reports",
+      "udt_name": "timestamptz"
+    },
+    {
+      "column_default": null,
+      "column_name": "archived_by",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "ordinal_position": 21,
+      "table_name": "reports",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "archive_reason",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "ordinal_position": 22,
+      "table_name": "reports",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "barangay",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "ordinal_position": 23,
+      "table_name": "reports",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "contact_phone",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "ordinal_position": 24,
+      "table_name": "reports",
+      "udt_name": "text"
+    },
+    {
+      "column_default": null,
+      "column_name": "resolution_id",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "ordinal_position": 25,
+      "table_name": "reports",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": "gen_random_uuid()",
+      "column_name": "id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "ordinal_position": 1,
+      "table_name": "user_roles",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "user_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "ordinal_position": 2,
+      "table_name": "user_roles",
+      "udt_name": "uuid"
+    },
+    {
+      "column_default": null,
+      "column_name": "role",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "ordinal_position": 3,
+      "table_name": "user_roles",
+      "udt_name": "app_role"
+    }
+  ],
+  "constraints": [
+    {
+      "definition": "PRIMARY KEY (id)",
+      "name": "audit_log_pkey",
+      "table_name": "audit_log",
+      "type": "p"
+    },
+    {
+      "definition": "PRIMARY KEY (id)",
+      "name": "infrastructure_items_pkey",
+      "table_name": "infrastructure_items",
+      "type": "p"
+    },
+    {
+      "definition": "FOREIGN KEY (infrastructure_id) REFERENCES infrastructure_items(id) ON DELETE SET NULL",
+      "name": "maintenance_records_infrastructure_id_fkey",
+      "table_name": "maintenance_records",
+      "type": "f"
+    },
+    {
+      "definition": "PRIMARY KEY (id)",
+      "name": "maintenance_records_pkey",
+      "table_name": "maintenance_records",
+      "type": "p"
+    },
+    {
+      "definition": "FOREIGN KEY (report_id) REFERENCES reports(id) ON DELETE SET NULL",
+      "name": "maintenance_records_report_id_fkey",
+      "table_name": "maintenance_records",
+      "type": "f"
+    },
+    {
+      "definition": "FOREIGN KEY (id) REFERENCES auth.users(id) ON DELETE CASCADE",
+      "name": "profiles_id_fkey",
+      "table_name": "profiles",
+      "type": "f"
+    },
+    {
+      "definition": "PRIMARY KEY (id)",
+      "name": "profiles_pkey",
+      "table_name": "profiles",
+      "type": "p"
+    },
+    {
+      "definition": "PRIMARY KEY (id)",
+      "name": "report_attachments_pkey",
+      "table_name": "report_attachments",
+      "type": "p"
+    },
+    {
+      "definition": "FOREIGN KEY (report_id) REFERENCES reports(id) ON DELETE CASCADE",
+      "name": "report_attachments_report_id_fkey",
+      "table_name": "report_attachments",
+      "type": "f"
+    },
+    {
+      "definition": "PRIMARY KEY (id)",
+      "name": "report_internal_notes_pkey",
+      "table_name": "report_internal_notes",
+      "type": "p"
+    },
+    {
+      "definition": "FOREIGN KEY (report_id) REFERENCES reports(id) ON DELETE CASCADE",
+      "name": "report_internal_notes_report_id_fkey",
+      "table_name": "report_internal_notes",
+      "type": "f"
+    },
+    {
+      "definition": "PRIMARY KEY (id)",
+      "name": "report_resolutions_pkey",
+      "table_name": "report_resolutions",
+      "type": "p"
+    },
+    {
+      "definition": "FOREIGN KEY (report_id) REFERENCES reports(id)",
+      "name": "report_resolutions_report_id_fkey",
+      "table_name": "report_resolutions",
+      "type": "f"
+    },
+    {
+      "definition": "PRIMARY KEY (id)",
+      "name": "report_status_history_pkey",
+      "table_name": "report_status_history",
+      "type": "p"
+    },
+    {
+      "definition": "FOREIGN KEY (report_id) REFERENCES reports(id) ON DELETE CASCADE",
+      "name": "report_status_history_report_id_fkey",
+      "table_name": "report_status_history",
+      "type": "f"
+    },
+    {
+      "definition": "CHECK (((char_length(address) >= 3) AND (char_length(address) <= 300)))",
+      "name": "reports_address_check",
+      "table_name": "reports",
+      "type": "c"
+    },
+    {
+      "definition": "CHECK (((char_length(description) >= 20) AND (char_length(description) <= 2000)))",
+      "name": "reports_description_check",
+      "table_name": "reports",
+      "type": "c"
+    },
+    {
+      "definition": "FOREIGN KEY (duplicate_of) REFERENCES reports(id) ON DELETE SET NULL",
+      "name": "reports_duplicate_of_fkey",
+      "table_name": "reports",
+      "type": "f"
+    },
+    {
+      "definition": "PRIMARY KEY (id)",
+      "name": "reports_pkey",
+      "table_name": "reports",
+      "type": "p"
+    },
+    {
+      "definition": "UNIQUE (reference_no)",
+      "name": "reports_reference_no_key",
+      "table_name": "reports",
+      "type": "u"
+    },
+    {
+      "definition": "FOREIGN KEY (resolution_id) REFERENCES report_resolutions(id)",
+      "name": "reports_resolution_id_fkey",
+      "table_name": "reports",
+      "type": "f"
+    },
+    {
+      "definition": "CHECK (((char_length(title) >= 5) AND (char_length(title) <= 120)))",
+      "name": "reports_title_check",
+      "table_name": "reports",
+      "type": "c"
+    },
+    {
+      "definition": "PRIMARY KEY (id)",
+      "name": "user_roles_pkey",
+      "table_name": "user_roles",
+      "type": "p"
+    },
+    {
+      "definition": "FOREIGN KEY (user_id) REFERENCES auth.users(id) ON DELETE CASCADE",
+      "name": "user_roles_user_id_fkey",
+      "table_name": "user_roles",
+      "type": "f"
+    },
+    {
+      "definition": "UNIQUE (user_id, role)",
+      "name": "user_roles_user_id_role_key",
+      "table_name": "user_roles",
+      "type": "u"
+    }
+  ],
+  "enums": [
+    {
+      "name": "app_role",
+      "values": [
+        "admin",
+        "staff",
+        "resident"
+      ]
+    },
+    {
+      "name": "maintenance_status",
+      "values": [
+        "planned",
+        "scheduled",
+        "in_progress",
+        "completed",
+        "cancelled"
+      ]
+    },
+    {
+      "name": "report_category",
+      "values": [
+        "road",
+        "bridge",
+        "streetlight",
+        "drainage",
+        "sidewalk",
+        "public_building"
+      ]
+    },
+    {
+      "name": "report_priority",
+      "values": [
+        "low",
+        "normal",
+        "high",
+        "urgent"
+      ]
+    },
+    {
+      "name": "report_severity",
+      "values": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ]
+    },
+    {
+      "name": "report_status",
+      "values": [
+        "submitted",
+        "under_review",
+        "needs_info",
+        "assigned",
+        "scheduled",
+        "in_progress",
+        "resolved",
+        "duplicate",
+        "rejected",
+        "withdrawn"
+      ]
+    }
+  ],
+  "function_grants": null,
+  "functions": [
+    {
+      "definition": "CREATE OR REPLACE FUNCTION public.archive_report(_report_id uuid, _reason text)\n RETURNS void\n LANGUAGE plpgsql\n SECURITY DEFINER\n SET search_path TO 'public'\nAS $function$\nbegin\n  if not public.has_role(auth.uid(),'admin') then raise exception 'Only admins can archive reports'; end if;\n  update public.reports set archived_at = now(), archived_by = auth.uid(), archive_reason = _reason, updated_at = now() where id = _report_id;\n  if not found then raise exception 'Report not found'; end if;\n  insert into public.audit_log(actor_id, action, entity, entity_id, detail) values (auth.uid(), 'archive', 'report', _report_id, _reason);\nend $function$\n",
+      "name": "archive_report"
+    },
+    {
+      "definition": "CREATE OR REPLACE FUNCTION public.enforce_report_resolution()\n RETURNS trigger\n LANGUAGE plpgsql\n SET search_path TO 'public'\nAS $function$\nBEGIN\n IF NEW.status = 'resolved' AND (TG_OP = 'INSERT' OR OLD.status IS DISTINCT FROM NEW.status) THEN\n  IF NOT public.is_staff_or_admin(auth.uid()) THEN RAISE EXCEPTION 'Only Staff or Admin can resolve reports'; END IF;\n  IF NEW.resolution_id IS NULL OR (TG_OP = 'UPDATE' AND NEW.resolution_id IS NOT DISTINCT FROM OLD.resolution_id) OR NOT EXISTS (SELECT 1 FROM public.report_resolutions x WHERE x.id = NEW.resolution_id AND x.report_id = NEW.id AND x.uploaded_by = auth.uid() AND length(btrim(x.reply)) > 0 AND jsonb_array_length(x.photos) > 0) THEN\n   RAISE EXCEPTION 'A resolution reply and at least one proof photo are required';\n  END IF;\n ELSIF TG_OP = 'UPDATE' AND NEW.resolution_id IS DISTINCT FROM OLD.resolution_id THEN\n  RAISE EXCEPTION 'Resolution proof can only be set while resolving a report';\n END IF;\n RETURN NEW;\nEND $function$\n",
+      "name": "enforce_report_resolution"
+    },
+    {
+      "definition": "CREATE OR REPLACE FUNCTION public.handle_new_user()\n RETURNS trigger\n LANGUAGE plpgsql\n SECURITY DEFINER\n SET search_path TO 'public'\nAS $function$\nbegin\n  insert into public.profiles (id, full_name) values (new.id, coalesce(new.raw_user_meta_data->>'full_name', new.raw_user_meta_data->>'name', ''));\n  insert into public.user_roles (user_id, role) values (new.id, 'resident');\n  return new;\nend $function$\n",
+      "name": "handle_new_user"
+    },
+    {
+      "definition": "CREATE OR REPLACE FUNCTION public.has_role(_user_id uuid, _role app_role)\n RETURNS boolean\n LANGUAGE sql\n STABLE SECURITY DEFINER\n SET search_path TO 'public'\nAS $function$\n  select exists (select 1 from public.user_roles where user_id = _user_id and role = _role)\n$function$\n",
+      "name": "has_role"
+    },
+    {
+      "definition": "CREATE OR REPLACE FUNCTION public.is_resolution_photo(_path text)\n RETURNS boolean\n LANGUAGE sql\n STABLE SECURITY DEFINER\n SET search_path TO 'public'\nAS $function$ SELECT EXISTS (SELECT 1 FROM public.report_resolutions x, jsonb_array_elements(x.photos) p WHERE p->>'storage_path' = _path) $function$\n",
+      "name": "is_resolution_photo"
+    },
+    {
+      "definition": "CREATE OR REPLACE FUNCTION public.is_staff_or_admin(_user_id uuid)\n RETURNS boolean\n LANGUAGE sql\n STABLE SECURITY DEFINER\n SET search_path TO 'public'\nAS $function$\n  select exists (select 1 from public.user_roles where user_id = _user_id and role in ('staff','admin'))\n$function$\n",
+      "name": "is_staff_or_admin"
+    },
+    {
+      "definition": "CREATE OR REPLACE FUNCTION public.public_report_photos()\n RETURNS TABLE(report_id uuid, storage_path text, file_name text, mime_type text)\n LANGUAGE sql\n STABLE SECURITY DEFINER\n SET search_path TO 'public'\nAS $function$\n  SELECT a.report_id, a.storage_path, a.file_name, a.mime_type\n  FROM public.report_attachments a\n  JOIN public.reports r ON r.id = a.report_id\n  WHERE r.archived_at IS NULL\n    AND a.mime_type LIKE 'image/%'\n$function$\n",
+      "name": "public_report_photos"
+    },
+    {
+      "definition": "CREATE OR REPLACE FUNCTION public.resolve_report(_report_id uuid, _reply text, _photos jsonb)\n RETURNS uuid\n LANGUAGE plpgsql\n SECURITY DEFINER\n SET search_path TO 'public'\nAS $function$\nDECLARE v_id uuid; v_photo jsonb; v_status public.report_status;\nBEGIN\n IF auth.uid() IS NULL OR NOT public.is_staff_or_admin(auth.uid()) THEN RAISE EXCEPTION 'Only Staff or Admin can resolve reports'; END IF;\n IF _reply IS NULL OR length(btrim(_reply)) = 0 THEN RAISE EXCEPTION 'A resolution reply is required'; END IF;\n IF _photos IS NULL OR jsonb_typeof(_photos) <> 'array' THEN RAISE EXCEPTION 'At least one proof photo is required'; END IF;\n IF jsonb_array_length(_photos) = 0 THEN RAISE EXCEPTION 'At least one proof photo is required'; END IF;\n SELECT status INTO v_status FROM public.reports WHERE id = _report_id AND archived_at IS NULL FOR UPDATE;\n IF NOT FOUND THEN RAISE EXCEPTION 'Report not found'; END IF;\n IF v_status = 'resolved' THEN RAISE EXCEPTION 'Report is already resolved'; END IF;\n FOR v_photo IN SELECT value FROM jsonb_array_elements(_photos) LOOP\n  IF NOT EXISTS (SELECT 1 FROM storage.objects o WHERE o.bucket_id = 'evidence' AND o.name = v_photo->>'storage_path' AND (storage.foldername(o.name))[1] = auth.uid()::text AND o.metadata->>'mimetype' IN ('image/jpeg','image/png','image/webp')) THEN RAISE EXCEPTION 'Each proof must be an uploaded JPG, PNG or WEBP photo belonging to you'; END IF;\n END LOOP;\n INSERT INTO public.report_resolutions(report_id, reply, photos, uploaded_by) VALUES (_report_id, btrim(_reply), _photos, auth.uid()) RETURNING id INTO v_id;\n PERFORM set_config('infracare.note', btrim(_reply), true);\n UPDATE public.reports SET status = 'resolved', resolution_id = v_id, updated_at = now() WHERE id = _report_id;\n RETURN v_id;\nEND $function$\n",
+      "name": "resolve_report"
+    },
+    {
+      "definition": "CREATE OR REPLACE FUNCTION public.restore_report(_report_id uuid)\n RETURNS void\n LANGUAGE plpgsql\n SECURITY DEFINER\n SET search_path TO 'public'\nAS $function$\nbegin\n  if not public.has_role(auth.uid(),'admin') then raise exception 'Only admins can restore reports'; end if;\n  update public.reports set archived_at = null, archived_by = null, archive_reason = null, updated_at = now() where id = _report_id;\n  if not found then raise exception 'Report not found'; end if;\n  insert into public.audit_log(actor_id, action, entity, entity_id, detail) values (auth.uid(), 'restore', 'report', _report_id, null);\nend $function$\n",
+      "name": "restore_report"
+    },
+    {
+      "definition": "CREATE OR REPLACE FUNCTION public.track_report_status()\n RETURNS trigger\n LANGUAGE plpgsql\n SECURITY DEFINER\n SET search_path TO 'public'\nAS $function$\nbegin\n  if tg_op = 'INSERT' then\n    insert into public.report_status_history(report_id, from_status, to_status, note, changed_by) values (new.id, null, new.status, 'Report submitted', auth.uid());\n  elsif new.status is distinct from old.status then\n    insert into public.report_status_history(report_id, from_status, to_status, note, changed_by)\n      values (new.id, old.status, new.status, nullif(current_setting('infracare.note', true), ''), auth.uid());\n  end if;\n  return null;\nend $function$\n",
+      "name": "track_report_status"
+    },
+    {
+      "definition": "CREATE OR REPLACE FUNCTION public.update_report_status(_report_id uuid, _status report_status, _note text)\n RETURNS void\n LANGUAGE plpgsql\n SET search_path TO 'public'\nAS $function$\nbegin\n  perform set_config('infracare.note', coalesce(_note,''), true);\n  update public.reports set status = _status, updated_at = now() where id = _report_id;\n  if not found then raise exception 'Report not found or not permitted'; end if;\nend $function$\n",
+      "name": "update_report_status"
+    }
+  ],
+  "grants": null,
+  "indexes": [
+    {
+      "indexdef": "CREATE UNIQUE INDEX audit_log_pkey ON public.audit_log USING btree (id)",
+      "indexname": "audit_log_pkey",
+      "tablename": "audit_log"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX infrastructure_items_pkey ON public.infrastructure_items USING btree (id)",
+      "indexname": "infrastructure_items_pkey",
+      "tablename": "infrastructure_items"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX maintenance_records_pkey ON public.maintenance_records USING btree (id)",
+      "indexname": "maintenance_records_pkey",
+      "tablename": "maintenance_records"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX profiles_pkey ON public.profiles USING btree (id)",
+      "indexname": "profiles_pkey",
+      "tablename": "profiles"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX report_attachments_pkey ON public.report_attachments USING btree (id)",
+      "indexname": "report_attachments_pkey",
+      "tablename": "report_attachments"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX report_internal_notes_pkey ON public.report_internal_notes USING btree (id)",
+      "indexname": "report_internal_notes_pkey",
+      "tablename": "report_internal_notes"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX report_resolutions_pkey ON public.report_resolutions USING btree (id)",
+      "indexname": "report_resolutions_pkey",
+      "tablename": "report_resolutions"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX report_status_history_pkey ON public.report_status_history USING btree (id)",
+      "indexname": "report_status_history_pkey",
+      "tablename": "report_status_history"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX reports_pkey ON public.reports USING btree (id)",
+      "indexname": "reports_pkey",
+      "tablename": "reports"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX reports_reference_no_key ON public.reports USING btree (reference_no)",
+      "indexname": "reports_reference_no_key",
+      "tablename": "reports"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX user_roles_pkey ON public.user_roles USING btree (id)",
+      "indexname": "user_roles_pkey",
+      "tablename": "user_roles"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX user_roles_user_id_role_key ON public.user_roles USING btree (user_id, role)",
+      "indexname": "user_roles_user_id_role_key",
+      "tablename": "user_roles"
+    }
+  ],
+  "policies": [
+    {
+      "cmd": "SELECT",
+      "permissive": "PERMISSIVE",
+      "policyname": "audit admin read",
+      "qual": "has_role(auth.uid(), 'admin'::app_role)",
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "audit_log",
+      "with_check": null
+    },
+    {
+      "cmd": "INSERT",
+      "permissive": "PERMISSIVE",
+      "policyname": "audit staff insert",
+      "qual": null,
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "audit_log",
+      "with_check": "((actor_id = auth.uid()) AND is_staff_or_admin(auth.uid()))"
+    },
+    {
+      "cmd": "DELETE",
+      "permissive": "PERMISSIVE",
+      "policyname": "infra admin delete",
+      "qual": "has_role(auth.uid(), 'admin'::app_role)",
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "infrastructure_items",
+      "with_check": null
+    },
+    {
+      "cmd": "UPDATE",
+      "permissive": "PERMISSIVE",
+      "policyname": "infra admin update",
+      "qual": "has_role(auth.uid(), 'admin'::app_role)",
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "infrastructure_items",
+      "with_check": "has_role(auth.uid(), 'admin'::app_role)"
+    },
+    {
+      "cmd": "INSERT",
+      "permissive": "PERMISSIVE",
+      "policyname": "infra admin write",
+      "qual": null,
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "infrastructure_items",
+      "with_check": "has_role(auth.uid(), 'admin'::app_role)"
+    },
+    {
+      "cmd": "SELECT",
+      "permissive": "PERMISSIVE",
+      "policyname": "infra public read",
+      "qual": "true",
+      "roles": [
+        "anon",
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "infrastructure_items",
+      "with_check": null
+    },
+    {
+      "cmd": "DELETE",
+      "permissive": "PERMISSIVE",
+      "policyname": "maint admin delete",
+      "qual": "has_role(auth.uid(), 'admin'::app_role)",
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "maintenance_records",
+      "with_check": null
+    },
+    {
+      "cmd": "SELECT",
+      "permissive": "PERMISSIVE",
+      "policyname": "maint public read",
+      "qual": "true",
+      "roles": [
+        "anon",
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "maintenance_records",
+      "with_check": null
+    },
+    {
+      "cmd": "INSERT",
+      "permissive": "PERMISSIVE",
+      "policyname": "maint staff insert",
+      "qual": null,
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "maintenance_records",
+      "with_check": "is_staff_or_admin(auth.uid())"
+    },
+    {
+      "cmd": "UPDATE",
+      "permissive": "PERMISSIVE",
+      "policyname": "maint staff update",
+      "qual": "is_staff_or_admin(auth.uid())",
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "maintenance_records",
+      "with_check": "is_staff_or_admin(auth.uid())"
+    },
+    {
+      "cmd": "INSERT",
+      "permissive": "PERMISSIVE",
+      "policyname": "own profile insert",
+      "qual": null,
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "profiles",
+      "with_check": "(id = auth.uid())"
+    },
+    {
+      "cmd": "SELECT",
+      "permissive": "PERMISSIVE",
+      "policyname": "own profile read",
+      "qual": "((id = auth.uid()) OR is_staff_or_admin(auth.uid()))",
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "profiles",
+      "with_check": null
+    },
+    {
+      "cmd": "UPDATE",
+      "permissive": "PERMISSIVE",
+      "policyname": "own profile update",
+      "qual": "(id = auth.uid())",
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "profiles",
+      "with_check": "(id = auth.uid())"
+    },
+    {
+      "cmd": "DELETE",
+      "permissive": "PERMISSIVE",
+      "policyname": "att delete",
+      "qual": "((uploaded_by = auth.uid()) AND (EXISTS ( SELECT 1\n   FROM reports r\n  WHERE ((r.id = report_attachments.report_id) AND (r.status = ANY (ARRAY['submitted'::report_status, 'needs_info'::report_status]))))))",
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "report_attachments",
+      "with_check": null
+    },
+    {
+      "cmd": "INSERT",
+      "permissive": "PERMISSIVE",
+      "policyname": "att insert",
+      "qual": null,
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "report_attachments",
+      "with_check": "((uploaded_by = auth.uid()) AND (EXISTS ( SELECT 1\n   FROM reports r\n  WHERE ((r.id = report_attachments.report_id) AND (r.reporter_id = auth.uid())))))"
+    },
+    {
+      "cmd": "SELECT",
+      "permissive": "PERMISSIVE",
+      "policyname": "att read",
+      "qual": "(EXISTS ( SELECT 1\n   FROM reports r\n  WHERE ((r.id = report_attachments.report_id) AND ((r.reporter_id = auth.uid()) OR is_staff_or_admin(auth.uid())))))",
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "report_attachments",
+      "with_check": null
+    },
+    {
+      "cmd": "INSERT",
+      "permissive": "PERMISSIVE",
+      "policyname": "internal notes staff insert",
+      "qual": null,
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "report_internal_notes",
+      "with_check": "((author_id = auth.uid()) AND is_staff_or_admin(auth.uid()))"
+    },
+    {
+      "cmd": "SELECT",
+      "permissive": "PERMISSIVE",
+      "policyname": "internal notes staff read",
+      "qual": "is_staff_or_admin(auth.uid())",
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "report_internal_notes",
+      "with_check": null
+    },
+    {
+      "cmd": "SELECT",
+      "permissive": "PERMISSIVE",
+      "policyname": "resolution owner or staff read",
+      "qual": "(EXISTS ( SELECT 1\n   FROM reports r\n  WHERE ((r.id = report_resolutions.report_id) AND ((r.reporter_id = auth.uid()) OR is_staff_or_admin(auth.uid())))))",
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "report_resolutions",
+      "with_check": null
+    },
+    {
+      "cmd": "SELECT",
+      "permissive": "PERMISSIVE",
+      "policyname": "history read",
+      "qual": "(EXISTS ( SELECT 1\n   FROM reports r\n  WHERE ((r.id = report_status_history.report_id) AND ((r.reporter_id = auth.uid()) OR is_staff_or_admin(auth.uid())))))",
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "report_status_history",
+      "with_check": null
+    },
+    {
+      "cmd": "INSERT",
+      "permissive": "PERMISSIVE",
+      "policyname": "reports insert",
+      "qual": null,
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "reports",
+      "with_check": "((reporter_id = auth.uid()) AND (status = 'submitted'::report_status))"
+    },
+    {
+      "cmd": "SELECT",
+      "permissive": "PERMISSIVE",
+      "policyname": "reports read",
+      "qual": "(((reporter_id = auth.uid()) OR is_staff_or_admin(auth.uid())) AND ((archived_at IS NULL) OR has_role(auth.uid(), 'admin'::app_role)))",
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "reports",
+      "with_check": null
+    },
+    {
+      "cmd": "UPDATE",
+      "permissive": "PERMISSIVE",
+      "policyname": "reports update own editable",
+      "qual": "((reporter_id = auth.uid()) AND (status = ANY (ARRAY['submitted'::report_status, 'needs_info'::report_status])))",
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "reports",
+      "with_check": "((reporter_id = auth.uid()) AND (status = ANY (ARRAY['submitted'::report_status, 'needs_info'::report_status, 'withdrawn'::report_status])))"
+    },
+    {
+      "cmd": "UPDATE",
+      "permissive": "PERMISSIVE",
+      "policyname": "reports update staff",
+      "qual": "is_staff_or_admin(auth.uid())",
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "reports",
+      "with_check": "is_staff_or_admin(auth.uid())"
+    },
+    {
+      "cmd": "SELECT",
+      "permissive": "PERMISSIVE",
+      "policyname": "read own roles",
+      "qual": "((user_id = auth.uid()) OR has_role(auth.uid(), 'admin'::app_role))",
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "public",
+      "tablename": "user_roles",
+      "with_check": null
+    },
+    {
+      "cmd": "DELETE",
+      "permissive": "PERMISSIVE",
+      "policyname": "evidence delete own",
+      "qual": "((bucket_id = 'evidence'::text) AND ((storage.foldername(name))[1] = (auth.uid())::text))",
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "storage",
+      "tablename": "objects",
+      "with_check": null
+    },
+    {
+      "cmd": "SELECT",
+      "permissive": "PERMISSIVE",
+      "policyname": "evidence read",
+      "qual": "((bucket_id = 'evidence'::text) AND (((storage.foldername(name))[1] = (auth.uid())::text) OR is_staff_or_admin(auth.uid())))",
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "storage",
+      "tablename": "objects",
+      "with_check": null
+    },
+    {
+      "cmd": "INSERT",
+      "permissive": "PERMISSIVE",
+      "policyname": "evidence upload own folder",
+      "qual": null,
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "storage",
+      "tablename": "objects",
+      "with_check": "((bucket_id = 'evidence'::text) AND ((storage.foldername(name))[1] = (auth.uid())::text))"
+    },
+    {
+      "cmd": "DELETE",
+      "permissive": "RESTRICTIVE",
+      "policyname": "retain committed resolution proof",
+      "qual": "((bucket_id <> 'evidence'::text) OR (NOT is_resolution_photo(name)))",
+      "roles": [
+        "authenticated"
+      ],
+      "schemaname": "storage",
+      "tablename": "objects",
+      "with_check": null
+    }
+  ],
+  "sequences": [
+    {
+      "cycle": false,
+      "data_type": "bigint",
+      "increment_by": 1,
+      "max_value": 9223372036854776000,
+      "min_value": 1,
+      "sequencename": "report_ref_seq",
+      "start_value": 1
+    }
+  ],
+  "tables": [
+    {
+      "kind": "r",
+      "name": "audit_log",
+      "rls_enabled": true
+    },
+    {
+      "kind": "r",
+      "name": "infrastructure_items",
+      "rls_enabled": true
+    },
+    {
+      "kind": "r",
+      "name": "maintenance_records",
+      "rls_enabled": true
+    },
+    {
+      "kind": "r",
+      "name": "profiles",
+      "rls_enabled": true
+    },
+    {
+      "kind": "v",
+      "name": "public_report_list",
+      "rls_enabled": false
+    },
+    {
+      "kind": "v",
+      "name": "public_report_resolutions",
+      "rls_enabled": false
+    },
+    {
+      "kind": "v",
+      "name": "public_report_stats",
+      "rls_enabled": false
+    },
+    {
+      "kind": "r",
+      "name": "report_attachments",
+      "rls_enabled": true
+    },
+    {
+      "kind": "r",
+      "name": "report_internal_notes",
+      "rls_enabled": true
+    },
+    {
+      "kind": "r",
+      "name": "report_resolutions",
+      "rls_enabled": true
+    },
+    {
+      "kind": "r",
+      "name": "report_status_history",
+      "rls_enabled": true
+    },
+    {
+      "kind": "r",
+      "name": "reports",
+      "rls_enabled": true
+    },
+    {
+      "kind": "r",
+      "name": "user_roles",
+      "rls_enabled": true
+    }
+  ],
+  "triggers": [
+    {
+      "definition": "CREATE TRIGGER on_auth_user_created AFTER INSERT ON auth.users FOR EACH ROW EXECUTE FUNCTION handle_new_user()",
+      "name": "on_auth_user_created",
+      "schema_name": "auth",
+      "table_name": "users"
+    },
+    {
+      "definition": "CREATE TRIGGER reports_require_resolution BEFORE INSERT OR UPDATE ON public.reports FOR EACH ROW EXECUTE FUNCTION enforce_report_resolution()",
+      "name": "reports_require_resolution",
+      "schema_name": "public",
+      "table_name": "reports"
+    },
+    {
+      "definition": "CREATE TRIGGER reports_status_ins AFTER INSERT ON public.reports FOR EACH ROW EXECUTE FUNCTION track_report_status()",
+      "name": "reports_status_ins",
+      "schema_name": "public",
+      "table_name": "reports"
+    },
+    {
+      "definition": "CREATE TRIGGER reports_status_upd AFTER UPDATE ON public.reports FOR EACH ROW EXECUTE FUNCTION track_report_status()",
+      "name": "reports_status_upd",
+      "schema_name": "public",
+      "table_name": "reports"
+    }
+  ],
+  "views": [
+    {
+      "definition": " SELECT id,\n    reference_no,\n    category,\n    severity,\n    status,\n    title,\n    description,\n    barangay,\n    created_at\n   FROM reports\n  WHERE archived_at IS NULL;",
+      "name": "public_report_list",
+      "options": [
+        "security_invoker=false"
+      ]
+    },
+    {
+      "definition": " SELECT x.id,\n    x.report_id,\n    x.reply,\n    x.photos,\n    x.created_at\n   FROM report_resolutions x\n     JOIN reports r ON r.id = x.report_id\n  WHERE r.archived_at IS NULL;",
+      "name": "public_report_resolutions",
+      "options": [
+        "security_invoker=false"
+      ]
+    },
+    {
+      "definition": " SELECT id,\n    category,\n    severity,\n    status,\n    priority,\n    date_trunc('month'::text, created_at) AS month,\n    created_at\n   FROM reports\n  WHERE archived_at IS NULL;",
+      "name": "public_report_stats",
+      "options": [
+        "security_invoker=false"
+      ]
+    }
+  ],
+  "evidence_bucket": [
+    {
+      "allowed_mime_types": null,
+      "file_size_limit": 26214400,
+      "id": "evidence",
+      "name": "evidence",
+      "public": false
+    }
+  ],
+  "sequence_grants": null,
+  "column_types": [
+    {
+      "column_name": "id",
+      "sql_type": "uuid",
+      "table_name": "audit_log"
+    },
+    {
+      "column_name": "actor_id",
+      "sql_type": "uuid",
+      "table_name": "audit_log"
+    },
+    {
+      "column_name": "action",
+      "sql_type": "text",
+      "table_name": "audit_log"
+    },
+    {
+      "column_name": "entity",
+      "sql_type": "text",
+      "table_name": "audit_log"
+    },
+    {
+      "column_name": "entity_id",
+      "sql_type": "uuid",
+      "table_name": "audit_log"
+    },
+    {
+      "column_name": "detail",
+      "sql_type": "text",
+      "table_name": "audit_log"
+    },
+    {
+      "column_name": "created_at",
+      "sql_type": "timestamp with time zone",
+      "table_name": "audit_log"
+    },
+    {
+      "column_name": "id",
+      "sql_type": "uuid",
+      "table_name": "infrastructure_items"
+    },
+    {
+      "column_name": "name",
+      "sql_type": "text",
+      "table_name": "infrastructure_items"
+    },
+    {
+      "column_name": "category",
+      "sql_type": "report_category",
+      "table_name": "infrastructure_items"
+    },
+    {
+      "column_name": "location",
+      "sql_type": "text",
+      "table_name": "infrastructure_items"
+    },
+    {
+      "column_name": "description",
+      "sql_type": "text",
+      "table_name": "infrastructure_items"
+    },
+    {
+      "column_name": "created_by",
+      "sql_type": "uuid",
+      "table_name": "infrastructure_items"
+    },
+    {
+      "column_name": "created_at",
+      "sql_type": "timestamp with time zone",
+      "table_name": "infrastructure_items"
+    },
+    {
+      "column_name": "updated_at",
+      "sql_type": "timestamp with time zone",
+      "table_name": "infrastructure_items"
+    },
+    {
+      "column_name": "id",
+      "sql_type": "uuid",
+      "table_name": "maintenance_records"
+    },
+    {
+      "column_name": "infrastructure_id",
+      "sql_type": "uuid",
+      "table_name": "maintenance_records"
+    },
+    {
+      "column_name": "report_id",
+      "sql_type": "uuid",
+      "table_name": "maintenance_records"
+    },
+    {
+      "column_name": "office",
+      "sql_type": "text",
+      "table_name": "maintenance_records"
+    },
+    {
+      "column_name": "work_description",
+      "sql_type": "text",
+      "table_name": "maintenance_records"
+    },
+    {
+      "column_name": "status",
+      "sql_type": "maintenance_status",
+      "table_name": "maintenance_records"
+    },
+    {
+      "column_name": "scheduled_date",
+      "sql_type": "date",
+      "table_name": "maintenance_records"
+    },
+    {
+      "column_name": "completed_date",
+      "sql_type": "date",
+      "table_name": "maintenance_records"
+    },
+    {
+      "column_name": "cost",
+      "sql_type": "numeric(12,2)",
+      "table_name": "maintenance_records"
+    },
+    {
+      "column_name": "created_by",
+      "sql_type": "uuid",
+      "table_name": "maintenance_records"
+    },
+    {
+      "column_name": "created_at",
+      "sql_type": "timestamp with time zone",
+      "table_name": "maintenance_records"
+    },
+    {
+      "column_name": "updated_at",
+      "sql_type": "timestamp with time zone",
+      "table_name": "maintenance_records"
+    },
+    {
+      "column_name": "id",
+      "sql_type": "uuid",
+      "table_name": "profiles"
+    },
+    {
+      "column_name": "full_name",
+      "sql_type": "text",
+      "table_name": "profiles"
+    },
+    {
+      "column_name": "phone",
+      "sql_type": "text",
+      "table_name": "profiles"
+    },
+    {
+      "column_name": "barangay",
+      "sql_type": "text",
+      "table_name": "profiles"
+    },
+    {
+      "column_name": "created_at",
+      "sql_type": "timestamp with time zone",
+      "table_name": "profiles"
+    },
+    {
+      "column_name": "updated_at",
+      "sql_type": "timestamp with time zone",
+      "table_name": "profiles"
+    },
+    {
+      "column_name": "id",
+      "sql_type": "uuid",
+      "table_name": "report_attachments"
+    },
+    {
+      "column_name": "report_id",
+      "sql_type": "uuid",
+      "table_name": "report_attachments"
+    },
+    {
+      "column_name": "uploaded_by",
+      "sql_type": "uuid",
+      "table_name": "report_attachments"
+    },
+    {
+      "column_name": "storage_path",
+      "sql_type": "text",
+      "table_name": "report_attachments"
+    },
+    {
+      "column_name": "file_name",
+      "sql_type": "text",
+      "table_name": "report_attachments"
+    },
+    {
+      "column_name": "mime_type",
+      "sql_type": "text",
+      "table_name": "report_attachments"
+    },
+    {
+      "column_name": "size_bytes",
+      "sql_type": "integer",
+      "table_name": "report_attachments"
+    },
+    {
+      "column_name": "created_at",
+      "sql_type": "timestamp with time zone",
+      "table_name": "report_attachments"
+    },
+    {
+      "column_name": "id",
+      "sql_type": "uuid",
+      "table_name": "report_internal_notes"
+    },
+    {
+      "column_name": "report_id",
+      "sql_type": "uuid",
+      "table_name": "report_internal_notes"
+    },
+    {
+      "column_name": "author_id",
+      "sql_type": "uuid",
+      "table_name": "report_internal_notes"
+    },
+    {
+      "column_name": "note",
+      "sql_type": "text",
+      "table_name": "report_internal_notes"
+    },
+    {
+      "column_name": "created_at",
+      "sql_type": "timestamp with time zone",
+      "table_name": "report_internal_notes"
+    },
+    {
+      "column_name": "id",
+      "sql_type": "uuid",
+      "table_name": "report_resolutions"
+    },
+    {
+      "column_name": "report_id",
+      "sql_type": "uuid",
+      "table_name": "report_resolutions"
+    },
+    {
+      "column_name": "reply",
+      "sql_type": "text",
+      "table_name": "report_resolutions"
+    },
+    {
+      "column_name": "photos",
+      "sql_type": "jsonb",
+      "table_name": "report_resolutions"
+    },
+    {
+      "column_name": "uploaded_by",
+      "sql_type": "uuid",
+      "table_name": "report_resolutions"
+    },
+    {
+      "column_name": "created_at",
+      "sql_type": "timestamp with time zone",
+      "table_name": "report_resolutions"
+    },
+    {
+      "column_name": "id",
+      "sql_type": "uuid",
+      "table_name": "report_status_history"
+    },
+    {
+      "column_name": "report_id",
+      "sql_type": "uuid",
+      "table_name": "report_status_history"
+    },
+    {
+      "column_name": "from_status",
+      "sql_type": "report_status",
+      "table_name": "report_status_history"
+    },
+    {
+      "column_name": "to_status",
+      "sql_type": "report_status",
+      "table_name": "report_status_history"
+    },
+    {
+      "column_name": "note",
+      "sql_type": "text",
+      "table_name": "report_status_history"
+    },
+    {
+      "column_name": "changed_by",
+      "sql_type": "uuid",
+      "table_name": "report_status_history"
+    },
+    {
+      "column_name": "created_at",
+      "sql_type": "timestamp with time zone",
+      "table_name": "report_status_history"
+    },
+    {
+      "column_name": "id",
+      "sql_type": "uuid",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "reference_no",
+      "sql_type": "text",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "reporter_id",
+      "sql_type": "uuid",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "category",
+      "sql_type": "report_category",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "severity",
+      "sql_type": "report_severity",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "title",
+      "sql_type": "text",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "description",
+      "sql_type": "text",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "address",
+      "sql_type": "text",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "landmark",
+      "sql_type": "text",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "latitude",
+      "sql_type": "double precision",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "longitude",
+      "sql_type": "double precision",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "status",
+      "sql_type": "report_status",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "created_at",
+      "sql_type": "timestamp with time zone",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "updated_at",
+      "sql_type": "timestamp with time zone",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "priority",
+      "sql_type": "report_priority",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "assigned_office",
+      "sql_type": "text",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "assigned_to",
+      "sql_type": "uuid",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "duplicate_of",
+      "sql_type": "uuid",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "duplicate_reason",
+      "sql_type": "text",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "archived_at",
+      "sql_type": "timestamp with time zone",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "archived_by",
+      "sql_type": "uuid",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "archive_reason",
+      "sql_type": "text",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "barangay",
+      "sql_type": "text",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "contact_phone",
+      "sql_type": "text",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "resolution_id",
+      "sql_type": "uuid",
+      "table_name": "reports"
+    },
+    {
+      "column_name": "id",
+      "sql_type": "uuid",
+      "table_name": "user_roles"
+    },
+    {
+      "column_name": "user_id",
+      "sql_type": "uuid",
+      "table_name": "user_roles"
+    },
+    {
+      "column_name": "role",
+      "sql_type": "app_role",
+      "table_name": "user_roles"
+    }
+  ],
+  "function_acl": [
+    {
+      "args": "_user_id uuid, _role app_role",
+      "grantee": "PUBLIC",
+      "name": "has_role",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_user_id uuid, _role app_role",
+      "grantee": "anon",
+      "name": "has_role",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_user_id uuid, _role app_role",
+      "grantee": "authenticated",
+      "name": "has_role",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_user_id uuid, _role app_role",
+      "grantee": "service_role",
+      "name": "has_role",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_user_id uuid",
+      "grantee": "PUBLIC",
+      "name": "is_staff_or_admin",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_user_id uuid",
+      "grantee": "anon",
+      "name": "is_staff_or_admin",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_user_id uuid",
+      "grantee": "authenticated",
+      "name": "is_staff_or_admin",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_user_id uuid",
+      "grantee": "service_role",
+      "name": "is_staff_or_admin",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "",
+      "grantee": "PUBLIC",
+      "name": "handle_new_user",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "",
+      "grantee": "anon",
+      "name": "handle_new_user",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "",
+      "grantee": "authenticated",
+      "name": "handle_new_user",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "",
+      "grantee": "service_role",
+      "name": "handle_new_user",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "",
+      "grantee": "PUBLIC",
+      "name": "track_report_status",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "",
+      "grantee": "anon",
+      "name": "track_report_status",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "",
+      "grantee": "authenticated",
+      "name": "track_report_status",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "",
+      "grantee": "service_role",
+      "name": "track_report_status",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_report_id uuid, _status report_status, _note text",
+      "grantee": "PUBLIC",
+      "name": "update_report_status",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_report_id uuid, _status report_status, _note text",
+      "grantee": "anon",
+      "name": "update_report_status",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_report_id uuid, _status report_status, _note text",
+      "grantee": "authenticated",
+      "name": "update_report_status",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_report_id uuid, _status report_status, _note text",
+      "grantee": "service_role",
+      "name": "update_report_status",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_report_id uuid, _reason text",
+      "grantee": "PUBLIC",
+      "name": "archive_report",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_report_id uuid, _reason text",
+      "grantee": "anon",
+      "name": "archive_report",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_report_id uuid, _reason text",
+      "grantee": "authenticated",
+      "name": "archive_report",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_report_id uuid, _reason text",
+      "grantee": "service_role",
+      "name": "archive_report",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_report_id uuid",
+      "grantee": "PUBLIC",
+      "name": "restore_report",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_report_id uuid",
+      "grantee": "anon",
+      "name": "restore_report",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_report_id uuid",
+      "grantee": "authenticated",
+      "name": "restore_report",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_report_id uuid",
+      "grantee": "service_role",
+      "name": "restore_report",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "",
+      "grantee": "PUBLIC",
+      "name": "public_report_photos",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "",
+      "grantee": "anon",
+      "name": "public_report_photos",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "",
+      "grantee": "authenticated",
+      "name": "public_report_photos",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "",
+      "grantee": "service_role",
+      "name": "public_report_photos",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "",
+      "grantee": "PUBLIC",
+      "name": "enforce_report_resolution",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "",
+      "grantee": "anon",
+      "name": "enforce_report_resolution",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "",
+      "grantee": "authenticated",
+      "name": "enforce_report_resolution",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "",
+      "grantee": "service_role",
+      "name": "enforce_report_resolution",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_report_id uuid, _reply text, _photos jsonb",
+      "grantee": "authenticated",
+      "name": "resolve_report",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_report_id uuid, _reply text, _photos jsonb",
+      "grantee": "service_role",
+      "name": "resolve_report",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_path text",
+      "grantee": "PUBLIC",
+      "name": "is_resolution_photo",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_path text",
+      "grantee": "anon",
+      "name": "is_resolution_photo",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_path text",
+      "grantee": "authenticated",
+      "name": "is_resolution_photo",
+      "privilege_type": "EXECUTE"
+    },
+    {
+      "args": "_path text",
+      "grantee": "service_role",
+      "name": "is_resolution_photo",
+      "privilege_type": "EXECUTE"
+    }
+  ]
+}
